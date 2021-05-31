@@ -1,0 +1,78 @@
+.container{
+    width: 25%;
+    min-width: 500px;
+    margin: 0% auto;
+    text-align: left;
+    border: 1px solid #e3d7d7;
+    display: flex;
+    flex-direction: column;
+}
+.friends-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items:center;
+    padding: 0.5em;
+    border-top: 1px solid #ccc;
+}
+.friends-list .friend-name{
+flex: 1 1 50%;
+}
+.friend-name h4,p{
+    margin:0;
+}
+.friend-name p{
+    font-size: 0.8em;
+}
+.friends-list .favorite,.friends-list .delete-btn{
+    flex: 0 1 1em;
+    padding: 0.3em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 1em;
+    cursor:pointer;
+}
+.friends-list .favorite:hover,.friends-list .delete-btn:hover{
+    background:#e3e3e3;
+}
+.favorite img,.delete-btn img{
+  width:16px;
+  height:16px;
+}
+.sortIcon img{
+    width:16px;
+    height:16px;
+}
+.sort_container{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-right:4em;
+}
+.sortIcon{
+    font-size: 0.8em;
+    margin-left: 1em;
+    vertical-align:middle;
+}
+.modal-popup{
+    width: 25%;
+    height:10em;
+    min-width: 500px;
+    position:absolute;
+    top:20%;
+    left: calc(50% - 250px);
+    background: #fff;
+    padding: 2em;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px #000;
+    outline: 0 none;
+}
+.overlay{
+    position:fixed;
+    width:100%;
+    top: 0;
+    left: 0;
+    height:100vh;
+    background:rgba(0,0,0,0.5);
+}
